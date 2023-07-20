@@ -1,83 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
-    <title>Register/Login Document</title>
-  </head>
-  <body class="row bg-success">
-    <div class="col-md-6">
-      <img src="images/don't-hide.webp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+  <title>Register/Login Document</title>
+</head>
+<body class="row bg-success">
+  <div class="col-md-6">
+    <img src="images/don't-hide.webp">
+  </div>
+  <div class="col-md-6">
+    <h1><b>Don't hide!</b></h1>
+    <p>Sign up now to receive exclusive offers and promotions.
+      <br>In order to receive the best deals that are customized to your tastes.</p>
+    <br>
+    <p>
+      Already have an account?
+    </p>
+    <div>
+      <div class="row">
+        <div class="col-md-6">
+          <p>Enter your E-Mail</p>
+          <input id="loginEmail" placeholder="Your E-mail">
+        </div>
+        <div class="col-md-6">
+          <p>Enter your Password</p>
+          <input id="loginPassword" placeholder="Your Password">
+        </div>
+      </div>
+      <br>
+      <button class="bg-warning" onclick="login()">Log in</button>
     </div>
-    <div class="col-md-6">
-      <h1><b>Don't hide!</b></h1>
-      <p>Sign up now to recieve exclusive offers and promotions.
-      <br>In order to recieve the best deals that are customized to your tastes.</p>
-      <br>
-      <p>
-        Already have an account?
-      </p>
-      <div>
-        <div class="row">
-          <div class="col-md-6">
-            <p>Enter your E-Mail</p>
-            <input placeholder="Your E-mail">
-          </div>
-          <div class="col-md-6">
-            <p>Enter your Password</p>
-            <input placeholder="Your Password">
-          </div>
-        </div>
-        <br>
-        <button class="bg-warning">Log in</button>
-      </div>
-      <br>
-      <p><b>Create a new account!</b></p>
-      <div class="row">
-        <div class="col-md-6">
-          <p>First Name</p>
-          <input placeholder="Add your name here ">
-        </div>
-        <div class="col-md-6">
-          <p>Last Name</p>
-        <input placeholder="Add your last name here ">
-        </div>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col-md-6">
-          <p>Phone</p>
-          <input placeholder="Add your phone number ">
-        </div>
-        <div class="col-md-6">
-          <p>E-Mail</p>
-          <input placeholder="Add your e-mail ">
-        </div>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col-md-6">
-          <p>Password</p>
-          <input placeholder="..............">
-        </div>
-        <div class="col-md-6">
-          <p>Confirm Pssword</p>
-          <input placeholder="..............">
-        </div>
-      </div>
-      <br>
+    <br>
+    <p><b>Create a new account!</b></p>
+    <div class="row">
       <div class="col-md-6">
-        <div class="row">
-          <input type="checkbox">
-          <p>"Yes,I want to recieve emails"</p>
-        </div>
-        <div class="row">  
-          <input type="checkbox">
-          <p>"I agree the Terms, Privacy Policy and Fees."</p>
-        </div>
+        <p>First Name</p>
+        <input id="firstName" placeholder="Add your name here">
       </div>
-      <button class="bg-warning">Sign up</button>
+      <div class="col-md-6">
+        <p>Last Name</p>
+        <input id="lastName" placeholder="Add your last name here">
+      </div>
     </div>
-  </body>
+    <br>
+    <div class="row">
+      <div class="col-md-6">
+        <p>Phone</p>
+        <input id="phone" placeholder="Add your phone number">
+      </div>
+      <div class="col-md-6">
+        <p>E-Mail</p>
+        <input id="signupEmail" placeholder="Add your e-mail">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-6">
+        <p>Password</p>
+        <input id="signupPassword" placeholder="..............">
+      </div>
+      <div class="col-md-6">
+        <p>Confirm Password</p>
+        <input id="confirmPassword" placeholder="..............">
+      </div>
+    </div>
+    <br>
+    <div class="col-md-6">
+      <div class="row">
+        <input type="checkbox" id="receiveEmails">
+        <p>"Yes, I want to receive emails"</p>
+      </div>
+      <div class="row">  
+        <input type="checkbox" id="agreeTerms">
+        <p>"I agree to the Terms, Privacy Policy, and Fees."</p>
+      </div>
+    </div>
+    <button class="bg-warning" onclick="signup()">Sign up</button>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
